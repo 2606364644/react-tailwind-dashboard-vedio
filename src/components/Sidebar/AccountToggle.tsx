@@ -13,12 +13,12 @@ export function AccountToggle () {
                 className="size-8 rounded shrink-0 bg-violet-500 shadow"
                 />
                 <div className="text-start">
-                    <div className="text-sm font-bold block">Name</div>
-                    <div className="text-xs block text-stone-500">Email</div>
+                    <div className="text-sm font-bold block">Tom Is Loading</div>
+                    <div className="text-xs block text-stone-500">tom@hover.dev</div>
                 </div>
-                <div className="ml-auto grid grid-cols-1">
-                    <FiChevronUp className="text-sm" />
-                    <FiChevronDown className="text-sm" />
+                <div className="ml-auto pr-2 grid gap-0">
+                    <FiChevronUp className="text-xs" />
+                    <FiChevronDown className="text-xs" />
                 </div>
             </button>
             
