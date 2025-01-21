@@ -24,9 +24,9 @@ const Route = ({
   title: string
 }) => {
   return (
-    <button className={`w-full flex items-center p-2 gap-2 transition-colors rounded-lg
+    <button className={`w-full flex items-center p-2 gap-2 transition-colors rounded-lg text-stone-500
       ${selected 
-        ? "bg-white shadow"
+        ? "bg-white text-stone-950 shadow"
         : "hover:bg-stone-400" 
       }`}
     >
