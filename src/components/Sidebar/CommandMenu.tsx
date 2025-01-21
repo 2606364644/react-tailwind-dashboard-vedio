@@ -39,7 +39,7 @@ export const CommandMenu = ({
         >
             <div 
                 onClick={(e) => e.stopPropagation()}
-                className="bg-white rounded-lg shadow border-stone-300 border overflow-hidden w-full"
+                className="bg-white rounded-lg shadow border-stone-300 border overflow-hidden w-full max-w-lg mx-auto mt-12"
             >
                 <Command.Input
                     value={value}

@@ -1,11 +1,10 @@
-import { title } from "process";
 import React from "react";
 import { IconType } from "react-icons";
 import { FiDollarSign, FiHome, FiLink, FiPaperclip, FiUser } from "react-icons/fi";
 
 export const RouteSelect = () => {
   return (
-    <div className="mt-4 text-sm grid gap-1">
+    <div className="mt-4 text-sm grid">
       <Route Icon={FiHome} selected={true} title="Dashboard"/>
       <Route Icon={FiUser} selected={false} title="Team" />
       <Route Icon={FiPaperclip} selected={false} title="Invoices" />
@@ -25,7 +24,12 @@ const Route = ({
   title: string
 }) => {
   return (
-    <button className="w-full flex items-center px-2 py-1.5 gap-2 transition-colors hover:bg-stone-400 shadow rounded">
+    <button className={`w-full flex items-center p-2 gap-2 transition-colors rounded-lg
+      ${selected 
+        ? "bg-white shadow"
+        : "hover:bg-stone-400" 
+      }`}
+    >
       <Icon className={selected ? "text-violet-500" : ""} />
       <span>{title}</span>
     </button>
