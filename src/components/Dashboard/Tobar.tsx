@@ -10,7 +10,7 @@ export const Tobar = () => {
           <span className="text-xs text-stone-500">Tuesday, Aug 8th 2023</span>
         </div>
 
-        <button className="ml-auto shadow px-2 py-1 rounded flex">
+        <button className="ml-auto shadow px-2 py-1 rounded flex items-center gap-2 text-sm bg-stone-100 hover:text-violet-600 hover:bg-violet-100">
           <FiCalendar/>
           <span>Prev 6 Months</span>
         </button>
